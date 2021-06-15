@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="crud.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="shortcut icon" type="z-icon" href="canvas.png">
+	<title>Crud App</title>
+</head>
+<body>
+	<div class="container">	
+		<div class="effective">		
+			<div class="up-book">
+				<h1>Add Book</h1>
+				<form>
+					<div class="all-group">
+						<div class="all-insert">
+							<p>Title</p>
+							<input id="title" type="text" class="inserting" name="title"><br>
+						</div>	
+						<div class="all-insert">
+							<p>Rating</p>
+							<input id="rating" type="text" class="inserting" name="rating">
+						</div>	
+						<div><button onclick="addNew()" type="button" class="add">Add New Book</button></div>
+					</div>
+				</form>
+			</div>
+			<div class="bottom-book">	
+				<aside>
+						<div class="a">
+							<h2>View Books</h2>
+						</div>
+						<table class="table">
+						 	<div class="navbook">
+								<thead>
+									<tr>
+										<th>#</th>
+										<th>Title</th>
+										<th>Rating</th>
+										<th>actions</th>
+									</tr>
+								</thead>	
+						   	</div>	
+							<tbody class="book-bar" id="ViewBooks">
+								<div class="ViewBooks">
+
+								</div>		
+							</tbody>
+						</table>											
+				</aside>
+			</div>	
+		</div>
+	</div>
+	<script src="crud.js"></script>		
+</body>
+</html>
